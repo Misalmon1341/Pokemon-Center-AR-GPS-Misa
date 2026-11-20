@@ -1,0 +1,10 @@
+# ninja log v5
+3	3145	8168410217283614	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	cb60db039b2ce0ab
+79	3227	8168410218487683	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	5686aac2b01deb41
+106	3350	8168410219843323	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	80aa1616a3f58869
+59	3380	8168410220150018	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	fd794cb09a664a4a
+33	3570	8168410221921408	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	f0d7c9f6e2934c57
+143	3645	8168410222856765	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	8c74bbd528681ae4
+45	3997	8168410226411745	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	b4b1c584a32dab45
+18	4137	8168410227731205	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	f60145b742beb627
+4137	4322	8168410229497577	C:/Users/A104 - 4/Documents/GitHub/Pokemon-Center-AR-GPS-Misa/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/366i4q1v/obj/arm64-v8a/libgame.so	6cf6f00f4bc4b289

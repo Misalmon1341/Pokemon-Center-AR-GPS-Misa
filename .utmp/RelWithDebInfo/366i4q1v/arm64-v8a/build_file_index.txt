@@ -1,0 +1,2 @@
+C:\Users\A104 - 4\Documents\GitHub\Pokemon-Center-AR-GPS-Misa\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+C:\Users\A104 - 4\Documents\GitHub\Pokemon-Center-AR-GPS-Misa\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt
