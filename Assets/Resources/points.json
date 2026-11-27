@@ -1,0 +1,24 @@
+{
+    "points": [
+        {
+            "latitude": "19.377346",
+            "longitude": "-99.157316"
+        },
+        {
+            "latitude": "19.377443",
+            "longitude": "-99.156415"
+        }, 
+	{
+	     "latitude": "19.376488",
+	     "longitude": "-99.155648"
+	},
+	{
+	     "latitude": "19.375715",
+	     "longitude": "-99.156082"
+	},
+	{
+	     "latitude": "19.375557",
+	     "longitude": "-99.155428"
+	}
+    ]
+}

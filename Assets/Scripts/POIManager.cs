@@ -14,9 +14,10 @@ public class POIData
 
 public class POIManager : MonoBehaviour
 {
+    MapboxMap mapInstance;
     public MapBehaviourCore mapCore;
     public List<POIData> pois = new List<POIData>();
-
+    public JsonHandler handler;
     private void Awake()
     {
         mapCore.Initialized += CreatePOIs;
@@ -24,16 +25,23 @@ public class POIManager : MonoBehaviour
 
     private void CreatePOIs(MapboxMap map)
     {
+        mapInstance = map;
+        handler.LoadFile();
+        IntancePoints();
+    }
+
+    private void IntancePoints()
+    {
         foreach (POIData data in pois)
         {
             LatitudeLongitude coordinates =
                 new LatitudeLongitude(data.latitude, data.longitude);
 
             Vector3 position =
-                map.MapInformation.ConvertLatLngToPosition(coordinates);
+                mapInstance.MapInformation.ConvertLatLngToPosition(coordinates);
 
             GameObject poi =
-                Instantiate(data.prefab, map.UnityContext.MapRoot);
+                Instantiate(data.prefab, mapInstance.UnityContext.MapRoot);
 
             poi.transform.localPosition = position;
         }

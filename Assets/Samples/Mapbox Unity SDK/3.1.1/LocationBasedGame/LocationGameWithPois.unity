@@ -326,6 +326,8 @@ MonoBehaviour:
   path: C:\Users\A104 - 4\Downloads\pointsJson\points.json
   pointsManager:
     points: []
+  poiManager: {fileID: 529571707}
+  dataPrefab: {fileID: 699478840599109474, guid: 2e354715b470f6147bbabdd824eb6c2e, type: 3}
 --- !u!4 &112710520
 Transform:
   m_ObjectHideFlags: 0
@@ -789,6 +791,7 @@ MonoBehaviour:
   - prefab: {fileID: 7152752914776671795, guid: 69f842c4fae056a4499a2d0e92a09c35, type: 3}
     latitude: 19.377092
     longitude: -99.15633
+  handler: {fileID: 112710519}
 --- !u!4 &529571708
 Transform:
   m_ObjectHideFlags: 0

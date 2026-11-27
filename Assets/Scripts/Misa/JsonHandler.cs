@@ -5,20 +5,31 @@ using UnityEngine;
 
 public class JsonHandler : MonoBehaviour
 {
-    public string path;
     public PointsManager pointsManager;
-
+    public POIManager  poiManager;
+    public GameObject dataPrefab;
     private void Start()
     {
         LoadFile();
     }
 
-    private void LoadFile()
+    public void LoadFile()
     {
-        if (File.Exists(path))
-        {
-            string content = File.ReadAllText(path);
-            pointsManager = JsonUtility.FromJson<PointsManager>(content);        }
+            TextAsset mytxtData = (TextAsset)Resources.Load("points");
+            string content = mytxtData.text;
+            pointsManager = JsonUtility.FromJson<PointsManager>(content);
+
+            poiManager.pois.Clear();
+            for (int i = 0; i < pointsManager.points.Length; i++)
+            {
+                POIData newPOIData = new POIData();
+                newPOIData.prefab = dataPrefab;
+                newPOIData.latitude = double.Parse(pointsManager.points[i].latitude);
+                newPOIData.longitude = double.Parse(pointsManager.points[i].longitude);
+                poiManager.pois.Add(newPOIData);
+            }
+        
+        
     }
 
     [ContextMenu("Print Json")]
